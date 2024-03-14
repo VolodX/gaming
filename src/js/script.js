@@ -47,7 +47,7 @@ const swiperGames = new Swiper(".new-games__swiper-container", {
   },
   speed: 900,
   spaceBetween: 25,
-  simulateTouch: false,
+  simulateTouch: true,
   on: {
     resize: function () {
       if (window.innerWidth <= 464) {
