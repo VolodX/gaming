@@ -1,0 +1,126 @@
+.sidebar {
+  &__container {
+    position: fixed;
+    left: auto;
+    height: 94%;
+    width: 12rem;
+    border-radius: 4rem;
+    background: linear-gradient(
+      180deg,
+      rgb(160, 27, 27),
+      1.5%,
+      #180202,
+      18%,
+      #180202,
+      56%,
+      rgb(160, 27, 27),
+      60%,
+      #180202 96%,
+      rgb(160, 27, 27) 106%
+    );
+  }
+
+  &__logo {
+    text-align: center;
+    padding-top: 3rem;
+  }
+
+  &__link {
+    font-size: 7rem;
+    // color: #ce5353;
+  }
+}
+
+.ri-infinity-line {
+  color: transparent;
+  background: linear-gradient(45deg, rgb(241, 241, 241), rgb(247, 40, 40));
+  background-clip: text;
+}
+
+.sidebar-right {
+  display: flex;
+  justify-content: end;
+  height: 94vh;
+  width: 14rem;
+}
+
+.sidebar-right {
+  &__container {
+  }
+}
+.sidebar-friends {
+  &__logo {
+  }
+
+  &__link {
+  }
+}
+
+.sidebar-chat {
+  &__logo {
+  }
+
+  &__link {
+  }
+}
+
+// //=============== SIDEBAR-FRIENDS ===============//
+// .sidebar-friends {
+//   &__container {
+//     position: fixed;
+//     // right: auto;
+//     height: 60%;
+//     width: 12rem;
+//     border-radius: 4rem;
+//     background: linear-gradient(
+//       180deg,
+//       rgb(160, 27, 27),
+//       1.5%,
+//       #180202,
+//       18%,
+//       #180202,
+//       56%,
+//       rgb(160, 27, 27),
+//       60%,
+//       #180202 96%,
+//       rgb(160, 27, 27) 106%
+//     );
+//   }
+
+//   &__logo {
+//   }
+
+//   &__link {
+//   }
+// }
+
+// //=============== SIDEBAR-CHAT ===============//
+// .sidebar-chat {
+//   &__container {
+//     position: fixed;
+//     // right: 0;
+//     // bottom: 0;
+//     height: 35%;
+//     width: 12rem;
+//     border-radius: 4rem;
+//     background: linear-gradient(
+//       180deg,
+//       rgb(160, 27, 27),
+//       1.5%,
+//       #180202,
+//       18%,
+//       #180202,
+//       56%,
+//       rgb(160, 27, 27),
+//       60%,
+//       #180202 96%,
+//       rgb(160, 27, 27) 106%
+//     );
+//   }
+
+//   &__logo {
+//   }
+
+//   &__link {
+//   }
+// }

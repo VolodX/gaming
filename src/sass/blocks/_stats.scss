@@ -1,0 +1,128 @@
+.stats {
+  grid-column: 3 / -1;
+  grid-row: 1 / 4;
+
+  &__header {
+  }
+  &__link {
+    position: relative;
+    font-size: 2.5rem;
+    color: white;
+  }
+
+  &__inner {
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 92%;
+    gap: 7rem;
+    border-radius: 4rem;
+    background: #1f0e0ebb;
+    // background: linear-gradient(to right, rgba(20, 17, 31, 0.801) 5%, rgba(24, 2, 2, 0.733) 30%);
+    box-shadow: inset 0.5rem 1rem 4rem 0.1rem rgba(41, 46, 71, 0.801);
+  }
+
+  &__top {
+    margin-top: 1rem;
+    position: relative;
+    text-align: center;
+    padding: 5rem 2rem;
+    border-radius: 50%;
+    border: 1px solid rgb(119, 45, 45);
+    &::before {
+      content: "";
+      position: absolute;
+      inset: -2rem -2rem;
+      background: $color-main;
+      z-index: -1;
+      border-radius: 50%;
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      inset: -2rem -2rem;
+      // background: conic-gradient(
+      //   from 0deg to 360deg,
+      //   #ff5858,
+      //   #ff5858 120deg,
+      //   #4d79ff 120deg,
+      //   #4d79ff 240deg,
+      //   #ff5858 240deg
+      // );
+      // z-index: -1;
+      border-radius: 50%;
+      box-shadow: 0 0 20px rgba(255, 88, 88, 0.5), 0 0 20px rgba(77, 121, 255, 0.5), 0 0 20px rgba(255, 88, 88, 0.5);
+      animation: waveAnimation 6s linear infinite;
+    }
+  }
+
+  &__text {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: $color-span;
+    font-weight: 600;
+  }
+
+  &__hours {
+    font-size: 2.6rem;
+    font-weight: 700;
+  }
+
+  &__icons {
+    display: flex;
+    gap: 2rem;
+  }
+
+  &__game {
+    display: grid;
+    justify-items: center;
+    p {
+      font-weight: 500;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    img {
+      width: 32px;
+      height: 32px;
+    }
+    &_1 {
+      background: $color-light-red;
+    }
+    &_2 {
+      background: #fff3af;
+    }
+    &_3 {
+      background: #8049ff;
+    }
+  }
+}
+
+@keyframes waveAnimation {
+  0%,
+  100% {
+    box-shadow: 0 0 20px rgba(255, 88, 88, 0.5);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 88, 88, 0.5), 0 0 20px rgba(77, 121, 255, 0.5), 0 0 20px rgba(255, 88, 88, 0.5);
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 1020px) {
+  .stats__img {
+    padding: 1.3rem;
+  }
+}
+
+// @media (max-width: 950px) {
+// 	.stats {
+// 		grid-column: 1 / 3;
+// 		grid-row: 3 / 5;
+// 	}
+// }

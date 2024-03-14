@@ -1,0 +1,64 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  background: $color-bg;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 140rem;
+  margin: 0 auto;
+  padding: 0 5rem;
+  position: relative;
+	overflow: clip;
+}
+
+.container {
+  max-width: 116rem;
+  margin: 0 11.5rem;
+  padding: 0 2rem;
+}
+
+@media (max-width: 1199.98px) {
+  // html {
+  // 	font-size: 60%;
+  // }
+  .wrapper {
+    padding: 0 0 2rem 0;
+  }
+  .container {
+    max-width: 116rem;
+    margin: 0 0 0 11.5rem;
+    padding: 0 2rem;
+  }
+}
+
+@media (max-width: 1020px) {
+  html {
+    font-size: 57%;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .wrapper {
+    // padding: 0;
+  }
+  .container {
+    // max-width: 116rem;
+    margin: 0;
+    padding: 0 2rem;
+		// padding: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}

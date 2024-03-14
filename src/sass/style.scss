@@ -1,0 +1,35 @@
+// @import "./base/**/*.scss";
+// @import "./blocks/**/*.scss";
+// @import "./components/**/*.scss";
+// @import "./base/*.scss";
+// @import "./blocks/*.scss";
+// @import "./components/*.scss";
+// @import url(https://fonts.googleapis.com/css?family=Anta:regular);
+@import url("https://fonts.googleapis.com/css2?family=Anta&family=Domine:wght@400..700&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500;700&family=Montserrat:wght@100..900&display=swapdisplay=swap");
+
+@import "./config/normalize";
+@import "./config/reset";
+@import "./config/variable";
+@import "./config/mixins";
+@import "./config/utils";
+@import "./config/functions";
+
+@import "./base/base";
+@import "./base/home";
+
+@import "./components/animation";
+@import "./components/typography";
+@import "./components/animation";
+
+@import "./components/btn";
+
+@import "./blocks/sidebar";
+@import "./blocks/about";
+@import "./blocks/header";
+@import "./blocks/new-games";
+@import "./blocks/stats";
+@import "./blocks/download";
+
+@import "./components/swiper";
+
+@import "./media";

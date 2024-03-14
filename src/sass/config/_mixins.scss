@@ -1,0 +1,61 @@
+//----------MIXINS----------/
+
+@mixin style-link {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #777;
+}
+
+@mixin style-link($color) {
+  display: inline-block;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-x($flex-x-pos) {
+  display: flex;
+  justify-content: $flex-x-pos;
+  align-items: center;
+}
+
+@mixin mediaLaptop() {
+  @media (max-width: 1439px) {
+    @content;
+  }
+}
+
+@mixin mediaTablet() {
+  @media (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin mediaMobile() {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
+
+@mixin mediaMobileS() {
+  @media (max-width: 475px) {
+    @content;
+  }
+}
+
+@mixin mediaMobileXS() {
+  @media (max-width: 374px) {
+    @content;
+  }
+}
+
+// %div-bg {
+//   @include flex-x(center);
+//   background: #7c5050;
+//   height: 100vh;
+// }

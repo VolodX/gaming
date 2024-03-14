@@ -1,0 +1,12 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(sprite.svg);
+  background-color: #fff;
+}
+.icon-epicgames {
+  width: 32px;
+  height: 32px;
+  background-position: 0 0;
+}
+
