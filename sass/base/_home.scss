@@ -1,0 +1,37 @@
+.main {
+}
+.header {
+}
+
+.sidebar {
+}
+.about {
+}
+.bottom-section {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2rem;
+
+}
+.new-games {
+}
+
+.stats {
+}
+
+.downloads {
+}
+
+@media (max-width: 950px) {
+	.bottom-section {
+		position: relative;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(6, 1fr);
+		gap: 2rem;
+		display: flex;
+		flex-direction: column;
+	}
+}

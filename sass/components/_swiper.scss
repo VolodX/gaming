@@ -1,0 +1,115 @@
+.image-slider {
+  &__wrapper {
+    position: absolute;
+    bottom: -27rem;
+    right: -20rem;
+    // width: 50%; // Задайте ширину за потребою
+    // height: 50%; // Задайте висоту за потребою
+    // width: 30rem;
+    // height: 30rem;
+  }
+
+  &__slide {
+  }
+
+  &__image {
+    img {
+      height: 35rem;
+      // width: 30rem;
+      object-fit: cover;
+    }
+  }
+}
+.swiper-container {
+}
+.swiper-wrapper {
+}
+.swiper-slide {
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: rgb(37, 11, 11);
+  font-size: 5rem;
+}
+
+.left-about__bg .swiper-pagination-bullets {
+  left: 34rem;
+}
+
+.swiper-pagination-bullet {
+  width: 3rem;
+  height: 0.5rem;
+  background: rgb(190, 57, 48);
+  // position: relative;
+  // right: -36rem;
+  // top: -27.5rem;
+  border-radius: 1rem;
+}
+
+// .image-slider__image img {
+//   max-width: 100%; // Максимальна ширина відносно батьківського елемента
+//   height: auto; // Автоматична висота для збереження аспектного відношення
+//   display: block; // Забезпечення правильного відображення як блочний елемент
+// }
+
+// .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
+// .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
+//   left: 120%;
+//   // top: 0;
+//   // transform: translateX(-50%);
+//   // white-space: nowrap;
+// }
+
+// .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+// .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+//   // margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
+//   margin: 0;
+// }
+
+@media (max-width: 1400px) {
+  .left-about__bg .swiper-pagination-bullets {
+    left: 31rem;
+  }
+
+  .swiper-pagination-bullet {
+    width: 2rem;
+    height: 0.5rem;
+  }
+}
+@media (max-width: 1280px) {
+  .left-about__bg .swiper-pagination-bullets {
+    left: 30rem;
+  }
+  .swiper-pagination-bullet {
+    width: 1rem;
+  }
+}
+@media (max-width: 1246px) {
+  .left-about__bg .swiper-pagination-bullets {
+    display: none;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .swiper-pagination-bullet {
+    width: 3rem;
+    height: 0.5rem;
+    background: rgb(190, 57, 48);
+    // position: relative;
+    // right: -36rem;
+    // top: -27.5rem;
+    border-radius: 1rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .image-slider__image img {
+    height: 30rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+}
+@media (max-width: 575.98px) {
+}

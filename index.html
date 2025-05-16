@@ -1,12 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="refresh" content="0; url=https://x-pain9.github.io/gaming/src/">
-  <title>Redirecting...</title>
-</head>
-<body>
-  <!-- Optional: You can add a message for users who don't get redirected -->
-  <p>If you are not redirected, <a href="https://X-Pain9.github.io/gaming/src/index.html">click here</a>.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn-uicons.flaticon.com/2.1.0/uicons-solid-rounded/css/uicons-solid-rounded.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--=============== HEADER ===============-->
+      <header class="header">
+        <!-- #BURGER MENU -->
+        <button class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <!-- <ul class="menu">
+          <li class="menu__list"><a href="#" class="menu__link">HOME</a></li>
+          <li class="menu__list"><a href="#" class="menu__link">GAMES</a></li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">SHOP</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">STATS</a>
+          </li>
+          <li class="menu__list">
+            <a href="#" class="menu__link">DOWNLOAD</a>
+          </li>
+        </ul> -->
+				<ul class="menu sidebar__list">
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"> <i class="ri-home-5-line"></i></a>
+					</li>
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"><i class="ri-gamepad-line"></i></a>
+					</li>
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"><i class="ri-gift-fill"></i></a>
+					</li>
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"><i class="ri-tv-fill"></i></a>
+					</li>
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"><i class="ri-donut-chart-fill"></i></a>
+					</li>
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"><i class="ri-shopping-bag-3-fill"></i></a>
+					</li>
+					<li class="menu__list sidebar__item">
+						<a href="#" class="menu__link sidebar__link"><i class="ri-message-2-line"></i></a>
+					</li>
+					<li class="menu-add">
+						<p>+</p>
+					</li>
+				</ul>
+	
+        <div class="container">
+          <div class="header__inner">
+            <div class="header__left">
+              <h1 class="header__title title">
+                <span>You're welcome,</span> REDLINE!
+                <i class="fa-solid fa-arrows-rotate fa-spin" style="color: #ff6666"></i>
+              </h1>
+              <!-- <div class="switch-mode">
+                <div class="switch-mode__select"></div>
+                <i class="fa-solid fa-sun sun" style="color: #ffd43b"></i>
+                <i class="fa-solid fa-moon moon"></i>
+              </div> -->
+              <div class="toggle-container">
+                <label class="switch" id="switch-mode">
+                  <input type="checkbox" id="darkModeToggle" />
+                  <span class="slider round"></span>
+                </label>
+              </div>
+            </div>
+            <div class="header__right">
+              <!-- <div class="search-form header__search">
+                <i class="ri-search-line"></i>
+                <input type="search" role="combobox" placeholder="Search" name="" id="" />
+              </div> -->
+              <div class="search-form header__search">
+                <i class="ri-search-line" aria-hidden="true"></i>
+                <label for="searchInput" class="sr-only"></label>
+                <input
+                  type="search"
+                  placeholder="Search"
+                  name="searchInput"
+                  id="searchInput"
+                  role="combobox"
+                  aria-haspopup="listbox"
+                  aria-expanded="false"
+                  aria-autocomplete="both"
+                />
+              </div>
+
+              <div class="header__list">
+                <div class="header__item">
+                  <button class="header__button header__button--shop" type="button">
+                    <i class="ri-shopping-cart-fill"></i>
+                  </button>
+                </div>
+                <div class="header__item">
+                  <button class="header__button header__button--bell" type="button">
+                    <i class="ri-notification-2-line"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!--=============== SIDEBAR ===============-->
+      <aside class="sidebar">
+        <nav class="sidebar__container">
+          <div class="sidebar__logo">
+            <a href="" class="sidebar__logo-link"> <i class="ri-infinity-line"></i></a>
+          </div>
+          <ul class="sidebar__list">
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"> <i class="ri-home-5-line"></i></a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"><i class="ri-gamepad-line"></i></a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"><i class="ri-gift-fill"></i></a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"><i class="ri-tv-fill"></i></a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"><i class="ri-donut-chart-fill"></i></a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"><i class="ri-shopping-bag-3-fill"></i></a>
+            </li>
+            <li class="sidebar__item">
+              <a href="" class="sidebar__link"><i class="ri-message-2-line"></i></a>
+            </li>
+          </ul>
+          <div class="sidebar__add">
+            <p>+</p>
+          </div>
+        </nav>
+      </aside>
+
+      <!--=============== MAIN ===============-->
+
+      <main class="main">
+        <section class="about">
+          <div class="container about__container">
+            <div class="about__left left-about">
+              <div class="left-about__bg">
+                <div class="image-slider swiper-container">
+                  <!-- Additional required wrapper -->
+                  <div class="image-slider__wrapper swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image"><img src="img/about/bg/1.webp" alt="picture" /></div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image"><img src="img/about/bg/2.webp" alt="picture" /></div>
+                    </div>
+                    <div class="image-slider__slide swiper-slide">
+                      <div class="image-slider__image"><img src="img/about/bg/3.webp" alt="picture" /></div>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <!-- If we need navigation buttons -->
+                  <!-- <div class="swiper-button-prev"></div>
+									<div class="swiper-button-next"></div> -->
+                </div>
+              </div>
+              <div class="left-about__top">
+                <div class="left-about__popular">
+                  <i class="ri-fire-line"></i>
+                  <p>Popular</p>
+                </div>
+                <div class="left-about__icon-steam"><i class="ri-steam-fill"></i></div>
+                <div class="left-about__epic-img"><img src="icons/about/epic.svg" alt="epic-games" /></div>
+              </div>
+              <div class="left-about__content">
+                <h2 class="left-about__title">Valorant</h2>
+                <p>
+                  Valorant is a free-to-play multiplayer tactical first-person shooter developed and published by Riot Games.
+                  Launched in June 2020.
+                </p>
+              </div>
+              <div class="left-about__bottom">
+                <div class="left-about__img">
+                  <img src="img/about/i-1.jpg" alt="reviewers" class="left-about__review-img" />
+                  <img src="img/about/i-2.jpg" alt="reviewers" class="left-about__review-img" />
+                  <img src="img/about/i-3.jpg" alt="reviewers" class="left-about__review-img" />
+                </div>
+                <div class="left-about__button-box">
+                  <i class="ri-thumb-up-line"></i>
+                  <button class="left-about__button btn" type="button">+53 Reviews</button>
+                </div>
+              </div>
+              <div class="left-about__bg">
+                <!-- <img src="img/valorant/main.png" alt="valorat-img" /> -->
+              </div>
+            </div>
+            <div class="about__right right-about">
+              <div class="right-about__item">
+                <img src="img/about/right/1.jpg" alt="game-icon" class="right-about__img" />
+                <p class="right-about__text">NeuroNation <span>(Standart Edition + Starter Pass)</span></p>
+              </div>
+
+              <div class="right-about__item">
+                <img src="img/about/right/2.jpg" alt="game-icon" class="right-about__img" />
+                <p class="right-about__text">Shadow Ninja</p>
+              </div>
+
+              <div class="right-about__item">
+                <img src="img/about/right/3.jpg" alt="game-icon" class="right-about__img" />
+                <p class="right-about__text">Red Dead Rademption 3 <span>(Premium Pack)</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="bottom-section container">
+          <section class="new-games">
+            <div class="new-games__header bottom-header">
+              <h2 class="bottom-header__title title">New Games</h2>
+              <a href="" class="bottom-header__link">See More</a>
+            </div>
+            <div class="new-games__swiper swiper">
+              <div class="new-games__swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="new-games__swiper-wrapper swiper-wrapper">
+                  <!-- Slides -->
+
+                  <div class="new-games__swiper-slide swiper-slide new-games__swiper-slide--1">
+                    <div class="new-games__icons">
+                      <i class="fa-solid fa-play" style="color: #ffffff"></i>
+                      <i class="fi fi-sr-basket-shopping-simple"></i>
+                    </div>
+                    <div class="new-games__content">
+                      <h3 class="new-games__subtitle">Warrior blade</h3>
+                      <p class="new-games__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, soluta eveniet porro reiciendis quis
+                        libero similique sint
+                      </p>
+                    </div>
+                  </div>
+                  <div class="new-games__dashed"></div>
+
+                  <div class="new-games__swiper-slide swiper-slide new-games__swiper-slide--2">
+                    <!-- <img src="" alt="" /> -->
+                    <div class="new-games__icons">
+                      <i class="fa-solid fa-play" style="color: #ffffff"></i>
+                      <i class="fi fi-sr-basket-shopping-simple"></i>
+                    </div>
+                    <div class="new-games__content">
+                      <h3 class="new-games__subtitle">Windfire</h3>
+                      <p class="new-games__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, soluta eveniet porro reiciendis quis
+                        libero similique sint
+                      </p>
+                    </div>
+                  </div>
+                  <div class="new-games__dashed"></div>
+
+                  <div class="new-games__swiper-slide swiper-slide new-games__swiper-slide--3">
+                    <!-- <img src="" alt="" /> -->
+                    <div class="new-games__icons">
+                      <i class="fa-solid fa-play" style="color: #ffffff"></i>
+                      <i class="fi fi-sr-basket-shopping-simple"></i>
+                    </div>
+                    <div class="new-games__content">
+                      <h3 class="new-games__subtitle">Sunset</h3>
+                      <p class="new-games__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, soluta eveniet porro reiciendis quis
+                        libero similique sint
+                      </p>
+                    </div>
+                  </div>
+                  <div class="new-games__dashed"></div>
+
+                  <div class="new-games__swiper-slide swiper-slide new-games__swiper-slide--4">
+                    <!-- <img src="" alt="" /> -->
+                    <div class="new-games__icons">
+                      <i class="fa-solid fa-play" style="color: #ffffff"></i>
+                      <i class="fi fi-sr-basket-shopping-simple"></i>
+                    </div>
+                    <div class="new-games__content">
+                      <h3 class="new-games__subtitle">Fire Sword 3</h3>
+                      <p class="new-games__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, soluta eveniet porro reiciendis quis
+                        libero similique sint
+                      </p>
+                    </div>
+                  </div>
+                  <div class="new-games__dashed"></div>
+
+                  <div class="new-games__swiper-slide swiper-slide new-games__swiper-slide--5">
+                    <!-- <img src="" alt="" /> -->
+                    <div class="new-games__icons">
+                      <i class="fa-solid fa-play" style="color: #ffffff"></i>
+                      <i class="fi fi-sr-basket-shopping-simple"></i>
+                    </div>
+                    <div class="new-games__content">
+                      <h3 class="new-games__subtitle">Samuray Blood</h3>
+                      <p class="new-games__text">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo, soluta eveniet porro reiciendis quis
+                        libero similique sint
+                      </p>
+                    </div>
+                  </div>
+                  <div class="new-games__dashed"></div>
+                </div>
+                <!-- If we need navigation buttons -->
+                <div class="new-games__btn-next swiper-button-next"></div>
+              </div>
+            </div>
+          </section>
+          <section class="stats">
+            <div class="stats__header bottom-header">
+              <h2 class="bottom-header__title title">Your Statistic</h2>
+              <a href="" class="bottom-header__link stats__link">→</a>
+            </div>
+            <div class="stats__inner">
+              <div class="stats__top">
+                <h3 class="stats__text">Total hours</h3>
+                <p class="stats__hours">12,340h</p>
+                <!-- <div class="stats__point"></div>
+                <div class="stats__point"></div>
+                <div class="stats__point"></div>
+                <div class="stats__point"></div>
+                <div class="stats__point"></div> -->
+              </div>
+              <div class="stats__icons">
+                <div class="stats__game">
+                  <div class="stats__img stats__img_1"><img class="dota" src="icons/download/dota.svg" alt="" /></div>
+                  <p>2,340h</p>
+                </div>
+                <div class="stats__game">
+                  <div class="stats__img stats__img_2">
+                    <img class="valorant" src="icons/download/valorant.svg" alt="" />
+                  </div>
+                  <p>5,420h</p>
+                </div>
+                <div class="stats__game">
+                  <div class="stats__img stats__img_3"><img class="cs" src="icons/download/cs.svg" alt="" /></div>
+                  <p>7,770h</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="download">
+            <div class="download__header bottom-header">
+              <h2 class="bottom-header__title title">Last Downloads</h2>
+              <a href="" class="bottom-header__link">See More</a>
+            </div>
+            <div class="download__inner">
+              <div class="download__game">
+                <div class="download__img"><img src="img/download/fifa.webp" alt="fifa-13" /></div>
+                <div class="download__desc">
+                  <h3 class="download__subtitle">FIFA 23</h3>
+                  <p class="download__text">Sports simulator</p>
+                </div>
+              </div>
+              <div class="download__bar bar-download">
+                <div class="bar-download__numbers">
+                  <p class="bar-download__time">1 hour 23min.</p>
+                  <p class="bar-download__size">265mb of 1.23gb</p>
+                </div>
+                <div class="bar-download__icons">
+                  <i class="fa-solid fa-play"></i>
+                  <i class="fa-solid fa-xmark"></i>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+      <!--=============== SIDEBAR-RIGHT ===============-->
+      <div class="sidebar-right">
+        <!--=============== SIDEBAR-FRIENDS ===============-->
+        <aside class="sidebar-right__container">
+          <div class="sidebar-friends">
+            <div class="sidebar-friends__logo">
+              <a href="" class="sidebar-friends__logo-link"> <img src="img/sidebar-friends/ava.jpg" alt="avatar" /></a>
+            </div>
+            <div class="sidebar-friends__list">
+              <div class="sidebar-friends__icon">
+                <i class="ri-team-fill"></i>
+              </div>
+              <a href="#" class="sidebar-friends__item">
+                <img src="img/sidebar-friends/1.jpg" alt="img" /> <span>In Game</span></a
+              >
+              <a href="#" class="sidebar-friends__item sidebar-friends__item--status-2">
+                <img src="img/sidebar-friends/2.jpg" alt="img"
+              /></a>
+              <a href="#" class="sidebar-friends__item"> <img src="img/sidebar-friends/3.jpg" alt="img" /></a>
+              <a href="#" class="sidebar-friends__item sidebar-friends__item--status-4">
+                <img src="img/sidebar-friends/4.jpg" alt="img"
+              /></a>
+              <a href="#" class="sidebar-friends__item"> <img src="img/sidebar-friends/5.jpg" alt="img" /></a>
+              <a href="#" class="sidebar-friends__item"> <img src="img/sidebar-friends/6.jpg" alt="img" /></a>
+            </div>
+          </div>
+          <!--=============== SIDEBAR-CHAT ===============-->
+          <div class="sidebar-chat">
+            <div class="sidebar-chat__logo">
+              <i class="ri-wechat-fill"></i>
+            </div>
+            <div class="sidebar-chat__list">
+              <a href="#" class="sidebar-chat__item"><img src="img/sidebar-chat/1.jpg" alt="" /></a>
+              <a href="#" class="sidebar-chat__item"><img src="img/sidebar-chat/2.jpg" alt="" /></a>
+              <a href="#" class="sidebar-chat__item"><img src="img/sidebar-chat/3.jpg" alt="" /></a>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!--=============== JS SCRIPTS ===============-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>

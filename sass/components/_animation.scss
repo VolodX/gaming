@@ -1,0 +1,54 @@
+//========KEYFRAMES========//
+
+// Анімація що переміщає наш текст з ліва на право
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+  70% {
+    transform: translateX(1rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+// Анімація що переміщає наш текст з права на ліво
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+  70% {
+    transform: translateX(-1rem);
+  }
+  100% {
+    transform: translateX(0rem);
+  }
+}
+
+// Анімація яка піднімає нащу кнопку на 7rem
+@keyframes button {
+  from {
+    opacity: 0;
+    transform: translateY(7rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0rem);
+  }
+}
+
+// Animation of run-text
+@keyframes line-text {
+  from {
+    transform: translateX(100vw);
+    // transform-origin: left center;
+  }
+  to {
+    transform: translateX(-100vw);
+    // transform-origin: right center;
+  }
+}
+

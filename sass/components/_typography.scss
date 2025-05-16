@@ -1,0 +1,35 @@
+.title {
+  font-size: 2rem;
+  color: white;
+  font-weight: 600;
+}
+button {
+  background: transparent;
+}
+
+.search-form {
+  input {
+    overflow: hidden;
+    outline: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.774);
+    &::placeholder {
+      color: rgba(255, 255, 255, 0.445);
+    }
+  }
+}
+
+.bottom-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  &__title {
+  }
+
+  &__link {
+    color: $color-span;
+  }
+}

@@ -1,0 +1,120 @@
+.download {
+  grid-column: 1 / 3;
+  grid-row: 3 / 4;
+  height: 8rem;
+  // padding-top: 2rem;
+
+  &__header {
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    background: linear-gradient(
+      90deg,
+      $color-light-red 0%,
+      rgba(226, 54, 54, 0.719) 35%,
+      rgba(145, 34, 34, 0.507) 42%,
+      rgba(24, 2, 2, 0.356) 50%
+    );
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+  }
+
+  &__game {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  &__img {
+    img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 2rem;
+    }
+  }
+
+  &__desc {
+  }
+
+  &__subtitle {
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+
+  &__text {
+    background: $color-bg;
+    border-radius: 1rem;
+    padding: 0.7rem;
+    font-size: 1.15rem;
+  }
+
+  &__bar {
+    display: flex;
+    gap: 5rem;
+  }
+}
+.bar-download {
+  &__numbers {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    font-size: 1.5rem;
+  }
+
+  &__time {
+    align-self: flex-end;
+  }
+
+  &__size {
+    color: rgb(143, 61, 61, 48);
+    font-weight: 600;
+  }
+
+  &__icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.4rem;
+    & :nth-child(1)::before {
+      padding: 1rem 1.2rem;
+      border-radius: 50%;
+      background: $color-light-red;
+    }
+    & :nth-child(2)::before {
+      background: rgb(255, 254, 254);
+      padding: 0.8rem 1.05rem;
+      border-radius: 50%;
+    }
+    & :nth-child(1) {
+      cursor: pointer;
+    }
+    & :nth-child(2) {
+      cursor: pointer;
+      font-size: 1.8rem;
+      color: rgb(248, 0, 0);
+    }
+  }
+}
+
+.download-mode {
+	background: linear-gradient(90deg, rgb(33 8 8) 0%, rgb(191 81 81 / 72%) 35%, #8d3c3c 38%, rgb(45 7 7 / 36%) 52%);
+}
+
+
+@media (max-width: 950px) {
+	.download {
+		height: auto;
+		// grid-column: 1 / 3;
+		// grid-row: 5 / 6;
+	}
+}
+
+@media (max-width: 537px) {
+	.bar-download__numbers {
+    display: none;
+}
+}
